@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #a2c2e8, #003f5c);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.profile-photo{
+    border-radius: 100% ;
+    margin-top: 30px;
+    width: 100px;    
+}
+.profile-box{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 380px;
+    height: 500px;
+    border-radius: 50px;
+
+}
+
+.name{
+    margin-top: 70px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: black;
+}
+
+.link{
+    color: gray;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.socials{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.follow{
+    width: 100px;
+    height: 30px;
+    font-size: 11px;
+    color: white;
+    background-color: rgb(224, 75, 100);
+    border: none;
+    border-radius: 20px;
+}
+.message{
+    width: 100px;
+    height: 30px;
+    font-size: 11px;
+    color: #8b8b8b;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-color: #808080;
+    border-style: solid;
+    border-radius: 20px;
+}
+
