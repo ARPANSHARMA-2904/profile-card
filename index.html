@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="texts.css">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="container">
-        <div class="profile-box">
-            <img class="profile-photo" src="assets/pp-1.jpg" alt="profile-photo">
-            <p class="name">Johnny Rogers</p>
-            <p class="link">@jonnyrogers</p>
-            <div class="socials">
-                <i class="fa-brands fa-facebook" style="color: #000000;"></i>
-                <i class="fa-brands fa-linkedin" style="color: #000000;"></i>
-                <i class="fa-brands fa-x-twitter" style="color: #000000;"></i>
-                <i class="fa-brands fa-instagram" style="color: #000000;"></i>
-                <i class="fa-brands fa-dribbble" style="color: #030303;"></i>
-            </div>
-            <p>Crafting brand and communication strategies,creating visual designs, leading art direction, and capturing portraits through photography. </p>
-            <div class="butt">
-                <button class="follow">Follow</button>
-                <button class="message">Message</button>
-            </div>
+        <p id="head">Calculate your BMI in just a matter of seconds</p>
+        <input id="weight" type="text" placeholder="Enter your weight:">
+        <input id="height" type="text" placeholder="Enter your height:">
+        <div class="selectContainer">
+            <select name="weightUnits" id="wu">
+                <option value="first">Kilograms</option>
+                <option value="second">Grams</option>
+                <option value="third">Pounds</option>
+            </select>
+            <select name="heightUnits" id="hu">
+                <option value="first">Meter</option>
+                <option value="second">Inches</option>
+                <option value="third">Centimeter</option>
+            </select>
         </div>
+        <p id="BMI"></p>
+        <p id="result"></p>
+        <button id="submit" onclick="calculate()">Submit</button>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
